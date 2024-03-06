@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+
+    <form action="/" method="post">
+        <label for="from_currency">From Currency:</label>
+        <select name="from_currency" id="from_currency" required>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="USD">USD (US Dollar)</option>
+            <option value="GBP">GBP (British Pound)</option>
+            <option value="AUD">AUD (Australian Dollar)</option>
+            <option value="JPY">JPY (Japanese Yen)</option>
+            <!-- Ajoutez d'autres options si nécessaire -->
+        </select>
+
+        <label for="to_currency">To Currency:</label>
+        <select name="to_currency" id="to_currency" required>
+            <option value="XOF">XOF (West African CFA franc)</option>
+        
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" required>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <!-- Display conversion results here -->
+
+</body>
+</html>
